@@ -1,0 +1,13 @@
+.invert {filter: invert(100%);}
+.gray {filter: grayscale(100%);}
+.shadow {filter: drop-shadow(8px 5px 10px black);}
+.blur {filter: blur(100px);}
+.opacity {filter: opacity(50%);}
+.interaction {filter: drop-shadow(1px 1px 1px gray);}
+.interaction:hover {filter: drop-shadow(10px 18px 10px black);}
+.interact21 {filter: drop-shadow(6px 1px 2px gray);}
+.interact21:active {filter: drop-shadow(12px 14px 10px black);}
+.saturate {filter: saturate(250%);}
+.anime {animation: anime 10s infinite;}
+body {background-color: red;}
+@keyframes anime {0% {opacity: 100%;} 50% {opacity: 0%;} 100% {opacity: 100%;}}

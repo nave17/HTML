@@ -1,0 +1,25 @@
+<html>
+    <head>
+        <style>
+            h2 {text-align: center;}
+            #morning {font-size: x-large; text-shadow: 2px 3px 5px gray;}
+        </style>
+    </head>
+    <body>
+        <h2>Variable Practice 2</h2>
+        <p id="morning"></p>
+        <p id="afternoon"></p>
+        <p id="evening"></p>
+        <script>
+            var time = 8
+            var timeofday = "Morning"
+             document.getElementById("morning").innerHTML ="I wake up in the morning at " + time + "AM";
+            time = time + 4
+            timeofday = "Afternoon"
+            document.getElementById("afternoon").innerHTML = "In the "+ timeofday +", I walk my dog at " + time + "AM";
+            time = time - 6
+            timeofday = "Evening"
+            document.getElementById("evening").innerHTML = "In the "+ timeofday + ", I do my chores at " + time + "PM";
+        </script>
+    </body>
+</html>

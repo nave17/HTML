@@ -1,0 +1,22 @@
+<html>
+    <head>
+        <style>
+            h2 {text-align: center;}
+        </style>
+    </head>
+    <body>
+        <h2>Variable Practice 2</h2>
+        <p id="demo"></p>
+        <script>
+
+var selection = parseInt(window.prompt("Give the User Id:", "Type a number!"), 10);
+
+if ( /^[0-9.,]+$/.test(selection)) {
+    document.getElementById("demo").innerHTML = "It's " + selection + "AM";
+
+} else {
+    document.getElementById("demo").innerHTML = Date();
+}
+        </script>
+    </body>
+</html>

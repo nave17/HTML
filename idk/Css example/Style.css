@@ -1,0 +1,126 @@
+body {background-image: url('https://images.unsplash.com/photo-1557682250-33bd709cbe85?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1000&q=80');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;}
+  /*First part of Moving to diffrent sections on the website*/
+  html {scroll-behavior: smooth;}
+  /*Social Buttons Css, Credit to Font-Awesome for the icons*/
+  .fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 30px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
+    border-radius: 50%;
+  }
+  
+  .fa:hover {
+      opacity: 70%;
+  }
+  .fa-instagram {
+    background: #ea4c89;
+    color: white;
+  }
+  .fa-facebook {
+    background: #3B5998;
+    color: white;
+  }
+  .fa-twitter {
+    background: #55ACEE;
+    color: white;
+  }
+  /* Container and centered classes are for the image you see at the top */
+  .container {
+    position: relative;
+    text-align: center;
+    color: white;
+  text-shadow: 2px 2px 5px black;}
+    .centered {
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: 'Brush Script MT', cursive;
+    color: white;
+    font-size: x-large;
+  }
+  /*The Sidebar on the left of the website*/
+  .sidebarleft {
+    height: 100%;
+    width: 200px;
+    position: fixed;
+    z-index: 1;
+    background-color: #CF0909;
+    overflow-x: hidden;
+    padding-top: 20px;
+    top: 0px;
+    left: 0px;
+  }
+  /*The Links on the Sidebar*/
+  .sidebarleft a {
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    font-size: 25px;
+    color: white;
+    display: block;
+  }
+  
+  .sidebarleft a:hover {
+    color: whitesmoke;
+  }
+  /*the stuff that isnt on the sidebar*/
+  #content {
+    margin-left: 200px; 
+    padding: 0px 10px;
+  }
+  
+  .myDiv {   
+    text-align: center;
+    left: 24%;
+    padding: 20px;
+    position: relative;
+    width: 50%;
+    color: white;
+  }
+  #visitlist {z-index: auto;
+    text-shadow: 2px 2px 5px rgb(53, 27, 27)}
+    #Darwin {z-index: auto;
+    text-shadow: 2px 2px 5px rgb(53, 27, 27)}
+    #Reef {z-index: auto;
+    text-shadow: 2px 2px 5px rgb(53, 27, 27)}
+    #bay {z-index: auto;
+    text-shadow: 2px 2px 5px rgb(53, 27, 27)}
+  .DRedBG {
+  color: white;
+  font-family:'Courier New', Courier, monospace;
+  font-weight: bold;
+  font-size: larger;}
+  table {text-align: center;
+  width: 100%;}
+  .DRedBG h1 {
+  color: white;
+  font-family:'Courier New', Courier, monospace;
+  font-weight: bold;
+  text-shadow: 2px 2px 5px rgb(53, 27, 27);
+  font-size: x-large;}
+  .DRedBG h2 {
+  color: white;
+  font-family:'Courier New', Courier, monospace;
+  text-shadow: 2px 2px 5px rgb(53, 27, 27);
+  font-weight: bold;
+  font-size: larger;}
+  table {text-align: center;
+  width: 100%;}
+  table {text-align: center;
+  width: 100%;}
+  th {text-shadow: 2px 2px 5px rgb(53, 27, 27);
+    margin: 2px 5px 2px 5px;
+    color:white;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;}
+    tr {margin: 2px 5px 2px 5px;}
+    td {color:white;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;}
+    .image {text-align: center;}

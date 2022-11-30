@@ -1,0 +1,302 @@
+<html>
+<head>
+  <link rel="stylesheet"
+   href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+   <link rel="icon" href="/Favicon.ico">
+<style>
+body {background-image: url('https://images.unsplash.com/photo-1557682250-33bd709cbe85?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1000&q=80');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;}
+/*First part of Moving to diffrent sections on the website*/
+html {scroll-behavior: smooth;}
+/*Social Buttons Css, Credit to Font-Awesome for the icons*/
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 30px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+  border-radius: 50%;
+}
+
+.fa:hover {
+    opacity: 70%;
+}
+.fa-instagram {
+  background: #ea4c89;
+  color: white;
+}
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+}
+/* Container and centered classes are for the image you see at the top */
+.container {
+  position: relative;
+  text-align: center;
+  color: white;
+text-shadow: 2px 2px 5px black;}
+  .centered {
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-family: 'Brush Script MT', cursive;
+  color: white;
+  font-size: x-large;
+}
+/*The Sidebar on the left of the website*/
+.sidebarleft {
+  height: 100%;
+  width: 200px;
+  position: fixed;
+  z-index: 1;
+  background-color: #CF0909;
+  overflow-x: hidden;
+  padding-top: 20px;
+  top: 0px;
+  left: 0px;
+}
+/*The Links on the Sidebar*/
+.sidebarleft a {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 25px;
+  color: white;
+  display: block;
+}
+
+.sidebarleft a:hover {
+  color: whitesmoke;
+}
+/*the stuff that isnt on the sidebar*/
+#content {
+  margin-left: 200px; 
+  padding: 0px 10px;
+}
+
+.myDiv {   
+  text-align: center;
+  left: 24%;
+  padding: 20px;
+  position: relative;
+  width: 50%;
+  color: white;
+ 
+}
+#visitlist {z-index: auto;
+  text-shadow: 2px 2px 5px rgb(53, 27, 27)}
+  #Darwin {z-index: auto;
+  text-shadow: 2px 2px 5px rgb(53, 27, 27)}
+  #Reef {z-index: auto;
+  text-shadow: 2px 2px 5px rgb(53, 27, 27)}
+  #bay {z-index: auto;
+  text-shadow: 2px 2px 5px rgb(53, 27, 27)}
+.DRedBG {
+color: white;
+font-family:'Courier New', Courier, monospace;
+font-weight: bold;
+font-size: larger;}
+table {text-align: center;
+width: 100%;}
+.DRedBG h1 {
+color: white;
+font-family:'Courier New', Courier, monospace;
+font-weight: bold;
+text-shadow: 2px 2px 5px rgb(53, 27, 27);
+font-size: x-large;}
+.DRedBG h2 {
+color: white;
+font-family:'Courier New', Courier, monospace;
+text-shadow: 2px 2px 5px rgb(53, 27, 27);
+font-weight: bold;
+font-size: larger;}
+table {text-align: center;
+width: 100%;}
+table {text-align: center;
+width: 100%;}
+th {text-shadow: 2px 2px 5px rgb(53, 27, 27);
+  margin: 2px 5px 2px 5px;
+  color:white;
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: bold;}
+  tr {margin: 2px 5px 2px 5px;}
+  td {color:white;
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: bold;}
+  .image {text-align: center;}
+                      /* The 3 Buttons CSS*/
+                      .riobtn{
+                        text-decoration:none;
+                        background-color:#1995cc;
+                        color:white;
+                        padding:10px 30px;
+                        border-bottom:4px solid #215198;
+                        border-radius:2px;
+                        transition: background-color 250ms ease-out;
+                      }
+                      
+                      .riobtn:hover{ 
+                        background-color:deepskyblue;
+                      }
+                      
+                      .riobtn:active{
+                        background-color:#215198;
+                        border-width:2px;
+                        position:relative;
+                        top:2px;
+                      }
+            
+                      .riobtn2{
+                        text-decoration:none;
+                        background-color:#eb2213;
+                        color:white;
+                        padding:10px 30px;
+                        border-bottom:4px solid #7e0505;
+                        border-radius:2px;
+                        transition: background-color 250ms ease-out;
+                      }
+                      
+                      .riobtn2:hover{ 
+                        background-color:rgb(240, 101, 101);
+                      }
+                      
+                      .riobtn2:active{
+                        background-color:#7e0505;
+                        border-width:2px;
+                        position:relative;
+                        top:2px;
+                      }
+            
+                      .riobtn3{
+                        text-decoration:none;
+                        background-color:#35dd26;
+                        color:white;
+                        padding:10px 30px;
+                        border-bottom:4px solid #106617;
+                        border-radius:2px;
+                        transition: background-color 250ms ease-out;
+                      }
+                      
+                      .riobtn3:hover{ 
+                        background-color:rgb(165, 255, 61);
+                      }
+                      
+                      .riobtn3:active{
+                        background-color:#106617;
+                        border-width:2px;
+                        position:relative;
+                        top:2px;
+                      }
+                      .header {text-align: center; font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+                    font-size: 26px; position: fixed; z-index: 2;}
+                    .headerth {margin: 20px;}
+</style>
+<!--This is The title and the Image next to it-->
+<title>Australia Tourist Website</title>
+<link rel="icon" href="/Favicon.ico">
+</head>
+<body>
+  <header class="header">
+    <table>
+        <th class="headerth"><a href="index.html" class="riobtn"><b style="text-shadow: 2px 2px 5px black;">Home</b></a></th>
+        <th class="headerth"><a href="wheretogo.html" class="riobtn2"><b style="text-shadow: 2px 2px 5px black;">Where to go</b></a></th>
+        <th class="headerth"><a href="accomodation.html" class="riobtn3"><b style="text-shadow: 2px 2px 5px black;">Accomodtion</b></a></th>
+    </table>
+         </header>
+  <div class="sidebarleft">
+    <br>
+    <a href=""><b style="text-shadow: 2px 2px 5px black; font-size: xx-large;">Quick Menu</b></a>
+    <a href="#visitlist"><b style="font-size: x-large; text-shadow: 2px 2px 5px black;">Places to visit</b></a>
+    <a href="#Darwin"><b style="text-shadow: 2px 2px 5px black;">Darwin</b></a>
+    <a href="#Reef"><b style="text-shadow: 2px 2px 5px black;">The Great Barrier Reef</b></a>
+    <a href="#bay"><b style="text-shadow: 2px 2px 5px black;">Byron Bay</b></a>
+    <a href="food.html"><b style="text-shadow: 2px 2px 5px black;">Where To Eat</b></a>
+  </div>
+  <div id="content"><!--Here is everything you actully see that isnt the sidebar-->
+
+
+<div class="container">
+
+<img src="https://www.planetware.com/photos-large/AUS/australia-beautiful-places-sydney-harbour.jpg" alt="Sydney Harbour in Australia">
+<div class="centered">Welcome to Australia</div>
+</div>
+<div class="mydiv">
+  <h2 id="visitlist">Places to visit in Australia</h2>
+  <h3>Darwin</h3><img src="https://www.touropia.com/gfx/d/best-cities-to-visit-in-australia/darwin.jpg" alt="image not found" width="600" height="360">
+  <h3>Great Barrier Reef</h3><img src="https://api.time.com/wp-content/uploads/2021/07/great-barrier-reef.jpg?w=824&quality=70" alt="image not found" width="600" height="360">
+    <h3>Byron Bay</h3><img src="https://www.touropia.com/gfx/d/small-towns-in-australia/byron_bay_nsw.jpg" alt="image not found" width="600" height="360">
+</div>
+<div class="DRedBG"> 
+  <h1 id="Darwin">Darwin</h1>
+  <p style="margin: 2px 5px 2px 5px;">Welcome to Darwin, the leisurely capital of the Northern Territory of Australia, 
+    with its warm nights, colourful inhabitants, and outdoor experiences. Along with markets,
+     crocodiles, and cruises, the city is home to significant amazing cultures, as shown by the diverse languages spoken on the streets and the vivid Aboriginal
+      art that fills the city's galleries,
+      museums, and streetscapes. Because of the city's closeness to Asia, considerable Asian influences may be found
+    particularly in the vibrant culinary scene and bustling night markets.</p>
+    <h2>Darwin's Food</h2>
+    <p style="margin: 2px 5px 2px 5px;">Darwin is a modern culinary pleasure thanks to its closeness to Asia and ocean of fresh seafood.
+       Savour the flavours at some of Darwin's best dining establishments.
+        Local products including as mud crab, barramundi, Kakadu plum, lemon myrtle, and even green ants are used in the cuisine. Don't worry, the green ants taste much better than they sound. 
+      When it comes to dining in Darwin, there are lots of alternatives.</p>
+      
+
+  <h1 id="Reef">Great Barrier Reef</h1>
+  <h2 style="text-align: center; color: #E02079;">"THE GREAT BARRIER REEF IS ONE OF THOSE PLACES YOU MUST VISIT, 
+    WHETHER YOU LOVE THE WATER OR JUST WANT TO SEE ONE OF THE GREAT WONDERS OF THE WORLD."</h2><h3 style="text-align: center; color: #ee3d8f;">-Chris Hemsworth, actor and Global Ambassador for Tourism Australia</h3>
+    <br>
+  <p style="margin: 2px 5px 2px 5px;">The Great Barrier Reef was the first coral reef system to be designated as a World Heritage Site,
+     having met all four natural criteria for inclusion. The reef is the biggest living structure on the planet, 
+     and it can even be viewed from space! With over 100 lovely islands strewn over the reef to explore, 
+     it is one of Australia's most popular attractions. With rainbow-colored corals and a diversity of marine creatures to observe up close, the snorkelling and diving possibilities are among the greatest in the world. The region is also culturally significant to the local Aboriginal people,
+     who have handed down legends about the reef's formation down the years.</p>
+     <h2>Things to do and attractions at the Great Barrier Reef</h2>
+     <h3>Cruise Michaelmas Cay</h3>
+     <p style="margin: 2px 5px 2px 5px;">Reef Cruise, a 32-metre (105-foot) high-performance catamaran,
+       it will take you to the Great Barrier Reef in luxury. It sails from Cairns to Michaelmas Cay,
+        a beautiful coral sand island off the coast of Queensland. 
+        You may dive and snorkel the reef among the turtles and colourful fish, sunbathe on the deck, 
+        or take a semi-submersible coral viewing trip. Michaelmas Cay is also home to over 23 different seabird species,
+       making it one of the Great Barrier Reef's most important bird sanctuaries.</p>
+       <img src="https://media.tacdn.com/media/attractions-splice-spp-674x446/09/ec/10/cb.jpg" width="600" height="360" alt="image not found">
+       <img src="https://www.oceanspirit.com.au/assets/images/ocean-spirit-cruises-35-1140-1140x814-800x600.jpg" width="600" height="360" alt="image not found">
+        <br>
+    <h1 id="bay">Byron Bay</h1>
+    <p style="margin: 2px 5px 2px 5px;">Byron Bay was a peaceful little industrial town with a
+       little stench of meat in the air thanks
+       to the local slaughterhouse and whaling station half a century ago. Today, 
+      Australia's most easterly point in northern New South Wales is a popular tourist attraction,
+       with over 2 million people each year.</p>
+    <h2>The Atmosphere</h2>
+    <p style="margin: 2px 5px 2px 5px;">Byron Bay is known for its distinct atmosphere,
+       which is an important element of the "Byron" experience. Many local hippies and street artists can be seen all around town,
+        and there is usually something going on. Walking through the streets,
+         you'll notice little colourful stores and dining establishments that reflect Byron Bay's unconventional lifestyle.
+          When you combine the incredibly easygoing environment, the Byron Bay people, the numerous pubs and clubs,
+       and the thriving live music scene, it's difficult not to have a good time in Bryon Bay!</p>
+       <h2>Surfing</h2>
+       <p style="margin: 2px 5px 2px 5px;">Byron Bay has 9 outstanding surfing beaches, for which it is internationally known; 
+        ‘The Pass’ lies directly next to the world famous Lighthouse and is a very popular surfspot, 
+        ‘The wreck’ which is good for beginner surfers, then you have the main beach, Belongil beach, Watego’s and little Watego’s,
+         ‘the Cosy Corner’ which is protected by the Arakwal National Park, Clarkes Beach 
+         which is great for paragliding and last but not least ‘Tallows beach’ which is really good for beach fishing.
+         If you are a beginner – why not try a Surf Lesson?</p>
+       <img src="https://cdn.concreteplayground.com/content/uploads/2020/10/byronbay-pexels.jpg" width="600" height="360" alt="image not found" class="image">
+       <img src="https://byronbeachabodes.com.au/wp-content/uploads/2018/01/Cape-Byron-Lighthouse-578x675.jpg" width="600" height="360" alt="image not found">
+       <iframe width="560" height="315" src="https://www.youtube.com/embed/vwStzHxKh44" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>
+<footer style="text-align: center;">
+  <a href="https://www.instagram.com/australia/?hl=en" class="fa fa-instagram"></a>
+  <a href="https://twitter.com/Australia?s=20" class="fa fa-twitter"></a>
+  <a href="https://www.facebook.com/pages/Australia/108191385876482/" class="fa fa-facebook"></a></footer>
+</div>
+
+</body>
+</html>

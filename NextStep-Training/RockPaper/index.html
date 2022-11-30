@@ -1,0 +1,126 @@
+<html>
+    <head>
+<script>
+     var num=3;
+
+    function PaperButtonPress(){
+      
+        if (num==1){
+            //draw
+            alert("It's a draw, no one wins")
+        } else if (num=2){
+            //lose
+            alert("You lose, I picked Scissors")
+        } else if (num==3){
+            //win
+            alert("You win, I picked Rock")
+        }
+
+    }
+
+    function RockButtonPress(){
+        
+        if (num==1){
+            //paper
+            alert("You lose, I picked Paper")
+        } else if (num=2){
+            //Scissors
+            alert("You win, I picked Scissors")
+        } else if (num==3){
+            //Rock
+            alert("It's a draw, no one wins")
+        }
+
+    }
+
+    function ScissorsButtonPress(){
+        
+        if (num==1){
+            //draw
+            alert("You win, I picked Paper")
+        } else if (num=2){
+            //lose
+            alert("It's a draw, no one wins")
+        } else if (num==3){
+            //win
+            alert("You lose, I picked Rock")
+        }
+
+    }
+
+
+function ComputerChoice(){
+    
+ num=Math.random()*(4-1)+1;
+
+
+}
+</script>
+<style>
+    h1 {
+top: 20%;
+        color: rgb(41, 63, 227);
+font-family:'Courier New', Courier, monospace;
+font-weight: bold;
+text-shadow: 2px 2px 5px rgb(53, 27, 27);
+font-size: x-large;
+text-align: center;
+position: relative;
+    }
+.Rock {
+    width: 90px;
+        height: 50px;
+        border: 2px solid black;
+        background-color: red;
+        padding: 20px;
+        border-radius: 10%;
+        text-align: center;
+        color: white;
+        left: 30%;
+        position: absolute;
+        top: 50%;
+        
+
+}
+.Paper {
+    width: 90px;
+        height: 50px;
+        border: 2px solid black;
+        background-color: rgb(4, 255, 0);
+        padding: 20px;
+        border-radius: 10%;
+        text-align: center;
+        color: white;
+        text-decoration: none;
+        font-family: 'Times New Roman', Times, serif;
+        left: 45%;
+        top: 50%;
+        position: absolute;
+}
+.Scissors {
+
+    width: 90px;
+        height: 50px;
+        border: 2px solid black;
+        background-color: rgb(0, 174, 255);
+        padding: 20px;
+        border-radius: 10%;
+        text-align: center;
+        color: white;
+        text-decoration: none;
+        font-family: 'Times New Roman', Times, serif;
+        left: 60%;
+        top: 50%;
+        position: absolute;
+}
+</style>
+
+    </head>
+    <body>
+        <h1>Please Choose Either Rock, Paper or Scissors</h1>
+<div class="Paper" onclick="PaperButtonPress()">Paper</div>
+<div class="Scissors" onclick="ScissorsButtonPress()">Scissors</div>
+<div class="Rock" onclick="RockButtonPress()">Rock</div>
+<button onclick="ComputerChoice()">Lick Me</button>
+    </body>
+</html>

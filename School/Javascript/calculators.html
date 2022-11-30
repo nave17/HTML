@@ -1,0 +1,102 @@
+<html>
+    <head>
+<style>
+    body {background-color: rgb(66, 184, 231); text-align: center;}
+    h1 {color: red; font-style: italic; text-align: center;}
+    
+    #tempbutton {background-color: white; border-radius: 25%; margin: 5px;
+         text-align: center; color: red; border-color: red; width: 100px; height: 80px;}
+    #tempbutton:active {background-color: red; border-radius: 25%; margin: 5px;
+     text-align: center; color: white; border-color: red; width: 100px; height: 80px; }
+
+     #curbutton {background-color: white; border-radius: 25%; margin: 5px;
+         text-align: center; color: blue; border-color: blue; width: 100px; height: 80px;}
+    #curbutton:active {background-color: blue; border-radius: 25%; margin: 5px;
+     text-align: center; color: white; border-color: blue; width: 100px; height: 80px; }
+    
+     #apbutton {background-color: white; border-radius: 25%; margin: 5px;
+         text-align: center; color: rgb(0, 255, 42); border-color: rgb(0, 255, 42); width: 100px; height: 80px;}
+    #apbutton:active {background-color: rgb(0, 255, 42); border-radius: 25%; margin: 5px;
+     text-align: center; color: white; border-color: rgb(0, 255, 42); width: 100px; height: 80px; }
+    
+     #Sonicbutton {background-color: white; border-radius: 25%; margin: 5px;
+         text-align: center; color: rgb(0, 174, 255); border-color: rgb(0, 174, 255); width: 100px; height: 80px;}
+    #Sonicbutton:active {background-color: rgb(0, 174, 255); border-radius: 25%; margin: 5px;
+     text-align: center; color: white; border-color: rgb(0, 174, 255); width: 100px; height: 80px; }
+     
+     #agebutton {background-color: white; border-radius: 25%; margin: 5px;
+         text-align: center; color: rgb(89, 0, 255); border-color: rgb(89, 0, 255); width: 100px; height: 80px;}
+    #agebutton:active {background-color: rgb(89, 0, 255); border-radius: 25%; margin: 5px;
+     text-align: center; color: white; border-color: rgb(89, 0, 255); width: 100px; height: 80px; }
+     #text1 {color: white;}
+     #text2 {color: white;}
+     #text3 {color: white;}
+     #text4 {color: white;}
+     #text5 {color: white;}
+</style>
+<script>
+    function temp() {
+var gcelsius=prompt("Insert the Temperature in Celsius");
+var rfarh=gcelsius*1.8+32;
+document.getElementById("text1").innerHTML="The temperature in Fahrenheit is: "+rfarh
+    }
+
+    function currencey() {
+        var item=prompt("Insert the item's name");
+        var price1=prompt("Insert the price in U.S Dollars");
+        var price2=price1*15.71;
+        document.getElementById("text2").innerHTML="The Price of "+item+"in Egyptian pounds is "+price2
+    }
+
+    function apcal() {
+        var width=prompt("Insert the width of the shape");
+        var height=prompt("Insert the height of the shape");
+        var area=width*height;
+        var Perimeter=(width*2)+(height*2);
+document.getElementById("text3").innerHTML="The area of the shape is "+area+"m2 and the perimeter of the shape is "+Perimeter+"m."
+    }
+
+    function sonic() {
+var distance=prompt("Insert the distance you went in Kilometers");
+var time=prompt("Insert the amount of time it took you to go "+distance+"km in minutes");
+var speed=distance/(time/60);
+document.getElementById("text4").innerHTML="You were going "+speed+"Km/hour"
+    }
+
+    function agecal() {
+        var birth=prompt("Insert the year you were born");
+        var futureyear=prompt("Insert the year you want to predict your age in");
+        var age1=futureyear-birth;
+        var age2=age1-1;
+        document.getElementById("text5").innerHTML="You will be "+age1+" or "+age2+" years old in "+futureyear
+    }
+</script>
+
+    </head>
+    <body>
+        <h1>Temperature Converter</h1>
+        <br>
+        <button id="tempbutton" onclick="temp()">Click to Convert</button>
+        <p id="text1"></p>
+        <br>
+        <h1>Currency Converter</h1>
+        <br>
+        <button id="curbutton" onclick="currencey()">Click to Convert</button>
+        <p id="text2"></p>
+        <br>
+        <h1>Area and Perimeter Calculator</h1>
+        <br>
+        <button id="apbutton" onclick="apcal()">Click to Calculate</button>
+        <p id="text3"></p>
+        <br>
+        <h1>Speed Calculator</h1>
+        <br>
+        <button id="Sonicbutton" onclick="sonic()">Click to Calculate Speed</button>
+        <p id="text4"></p>
+        <br>
+        <h1>Age Calculator</h1>
+        <br>
+        <button id="agebutton" onclick="agecal()">Click to predict your age</button>
+        <p id="text5"></p>
+    </body>
+</html>

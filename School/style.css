@@ -1,0 +1,22 @@
+
+.title {font-family: cursive;
+background-color: red;
+color: white;
+text-shadow: 5px 5px 5px black;
+font-size: 36px;
+text-align: center;}
+
+.facts {background-color: yellow;
+font-family: cursive;
+font-size: 24px;
+text-shadow: 5px 5px 5px lightslategray;
+}
+
+.content {background-color: lightseagreen;}
+.rectangle {width: 1502px;
+height: 30px;
+background-color: black;}
+body {background-image: url('https://i.gifer.com/origin/10/10432dc8fa06a9ddf19d8ee7246c3702.gif');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;}

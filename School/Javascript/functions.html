@@ -1,0 +1,32 @@
+<html>
+    <head>
+        <style>
+
+        </style>
+        
+    </head>
+    <body>
+        <h1>Here it will show up </h1>
+        <p id="demo"></p>
+        <p id="demo2"></p>
+        <p id="demo3"></p>
+        <script>
+            //defining, a is like a varible specifically for the function
+function triple(a){
+    return a*3;
+    }
+    let i=Math.PI;
+    function area(radius){
+    
+        round = (Math.round(i*radius**2)).toFixed(2);
+     return round;
+    }
+    function product(x,y){return x*y;}
+    //calling
+    triple(3);
+    document.getElementById("demo").innerHTML=triple(3);
+    document.getElementById("demo2").innerHTML=product(4,8);
+    document.getElementById("demo3").innerHTML=area(3);
+        </script>
+    </body>
+</html>

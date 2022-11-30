@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Discord Webhook Tutorial</title>
+  </head>
+  <body>
+    <button onclick="sendMessage()">Send</button>
+  </body>
+
+  <script>
+    function sendMessage() {
+        var request = new XMLHttpRequest();
+request.open("POST", "https://discord.com/api/webhooks/895014333057228841/8ZV_B0m_luShJaONXgRuY4WNWfu2S62mpu4pjX_lNCIjj4GhUKWpJRkrThVhhoF9HuD2");
+// again, replace the url in the open method with yours
+request.setRequestHeader('Content-type', 'application/json');
+
+const myEmbed = {
+  author: {
+    name: "Captain Hook"
+  },
+  title: "My new embed",
+  description: "This is a cool-looking Discord embed, sent directly from JavaScript!",
+  color: hexToDecimal("#ff0000")
+}
+
+const params = {
+  username: "My Webhook Name",
+  embeds: [ myEmbed ]
+}
+request.send(JSON.stringify(params));
+    }
+  </script>
+</html>

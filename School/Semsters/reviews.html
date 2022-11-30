@@ -1,0 +1,67 @@
+<html>
+    <head>
+        
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+<div class="header">
+    <table>
+        <th class="headerth"><a href="Index.html" class="riobtn"><b style="text-shadow: 2px 2px 5px black;">Home</b></a></th>
+        <th class="headerth"><a href="Actors.Html" class="riobtn2"><b style="text-shadow: 2px 2px 5px black;">Actors</b></a></th>
+        <th class="headerth"><a href="reviews.html" class="riobtn3"><b style="text-shadow: 2px 2px 5px black;">Reviews</b></a></th>
+    </table>
+</div>
+<div class="review1">
+    <h3 id="review10"></h3>
+</div>
+<div class="DRedBG">
+    <h1>Reviews</h1>
+    <br><br>
+    <h3>Absoultely Amazing</h3>
+    <p>This has to be one of the greatest marvel films ever, the acting, CGI and the story were all phenomenal, really looking forward to the next spider man, and I really hope that 
+        Tom Holland stays on as spider man for a lot longer and I hope to see him star in other Marvel films within the MCU!</p>
+        <h3>Teenage Spider-Man in Europe</h3>
+        <p>"Spider-Man: Far from Home" is a typical film for youngsters or fans of Marvel, CGI and explosions. The storyline is silly, the screenplay is not as funny as the writer intended to be and the hero is annoying. Anyway entertains if the viewer
+             has lower expectation and does not have a better option. The cliffhanger in the credits is one of the best scenes. My vote is six.</p>
+             <h3>A fun romp after the finality of Endgame</h3>
+             <p>I do not work for Disney, but I suspect that they do not plan to stop making billions from their Marvel rights just yet; so while Endgame felt like a conclusion, certainly it is nothing of the sort. Far From Home is a well placed product then, much like Ant-Man and The Wasp was a bit of an amuse-bouche in the series, so too is this film a bit of a good old return to a smaller but engaging adventure. The plot sees Peter Parker trying to ignore the weight on hi and just enjoy an European vacation, although an interdimensional threat called an Elemental seems poised to disrupt all that.
+            </p>
+            <h3 id="joke"></h3>
+            <p id="jokes"></p>
+            <br>
+            <button onclick="joke2()">Add Review</button>
+            <button onclick="rater()">Add your rating</button>
+</div>
+        <script>
+            var rate=74;
+            
+document.getElementById("review10").innerHTML=rate+"%"
+function joke2() {
+var title=prompt("Enter the review title");
+var text=prompt("Enter the review itself");
+document.getElementById("joke").innerHTML=title;
+document.getElementById("jokes").innerHTML=text;
+}
+function rater() {
+    var rating=prompt("Enter how many stars you would rate it as from 1-5(Numbers only)");
+
+    if (rating==1){
+var newr1=rate-10;
+document.getElementById("review10").innerHTML=newr1+"%"
+    } else if (rating==2) {
+        
+var newr2=rate-5;
+document.getElementById("review10").innerHTML=newr2+"%"
+    } else if (rating==4) {
+        
+var newr3=rate+5;
+document.getElementById("review10").innerHTML=newr3+"%"
+    } else if (rating==5) {
+        var newr4=rate+10;
+document.getElementById("review10").innerHTML=newr4+"%"
+    }
+}
+
+        </script>
+    </body>
+</html>

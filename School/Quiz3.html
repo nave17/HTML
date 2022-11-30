@@ -1,0 +1,90 @@
+<html>
+    <head>
+        <style>
+            
+body {
+    text-align: center;
+}
+button {
+    text-decoration: none;
+    width: 150px;
+    height: 100px;
+    background-color: rgb(206, 59, 59);
+    box-shadow: gray 10px 10px 10px;
+    color: white;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 20px;
+}
+.Negativemess {
+    width: 40px;
+    height: 40px;
+    background-color: aquamarine;
+    animation: animated 10s alternate infinite
+}
+@keyframes animated {
+    0% {margin: 0; left:50%; top:50%; background-color: aquamarine;}
+    25% {left: 0px; top: 0px; background-color: rgb(31, 197, 142);}
+    50% {left: 100px; top: 100px; background-color: rgb(34, 100, 78);}
+    75% {left: 500px; top: 500px; background-color: rgb(3, 58, 39);}
+    100% {margin: 0; left:50%; top:50%; background-color: rgb(150, 238, 209);}
+}
+a {
+    text-decoration: none;
+    color: white;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 20px;
+}
+        </style>
+    </head>
+    <body>
+        <h1>Elements</h1>
+<h2>tables</h2>
+<table>
+    <tr>
+        <th>Header</th><th>Header</th><th>header</th>
+    </tr>
+    <tr>
+        <td>Data</td><td>Data</td><td>Data</td>
+    </tr>
+</table>
+<br>
+<h2>Functions</h2>
+<button id="button1" onclick="Script()">Click me to use Script Function</button>
+<br>
+<h2>Lists</h2>
+<br>
+<h3>order lists</h3>
+<br>
+<ol>
+    <li>1</li>
+    <li>2</li>
+    <li>3</li>
+</ol>
+<br>
+<h3>unordered lists</h3>
+<br>
+<ul>
+    <li>1</li>
+    <li>2</li>
+    <li>3</li>
+</ul>
+<br>
+<h2>Divs</h2>
+<div class="Negativemess"></div>
+<br>
+<br>
+<h2>Avaliable notes</h2>
+<button><a href="https://docs.google.com/document/d/11HivT8tx184Z6hU2v2_Bh1DQUSDzuu-mvU7LxH2ptRE/edit?usp=sharing">Click me</a>
+</button>
+
+<script>
+    function Script() {
+        alert("This is shown in an alert tab, you can use getelementbyiid btw")
+        var Iamvar="this is a varible put in alert";
+        alert(Iamvar)
+    }
+</script>
+<h2></h2>
+
+    </body>
+</html>

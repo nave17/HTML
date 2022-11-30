@@ -1,0 +1,150 @@
+<html>
+    <head>
+<style>
+    button {
+        width: 290px;
+        height: 200px;
+        border-radius: 25%;
+        background-color: rgb(53, 120, 221);
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        color:white;
+        font-size: 30px;
+        text-shadow: aquamarine 2px 4px 6px;
+        box-shadow: black 5px 6px 6px;
+    }
+    body {
+        text-align: center;
+    }
+</style>
+    </head>
+    <body>
+        <h1>Our calcuators</h1>
+        <button id="button1" onclick="number()">Press to check number sign</button><br><p id="p1"></p>
+        <button id="button2" onclick="great()">Press to check which number is biggest</button><br><p id="p2"></p>
+        <button id="button3" onclick="BMI()">Press to check your BMI</button><br><p id="p3"></p>
+        <button id="button4" onclick="grades()">Press to check your letter grade</button><br><p id="p4"></p>
+        <button id="button5" onclick="checksq()">Press to check if the shape is a square</button><br><p id="p5"></p>
+        <button id="button6" onclick="triang()">Press to check triangle type</button><br><p id="p6"></p>
+        <button id="button7" onclick="oddeve()">Press to check if a number is odd or even</button><br><p id="p7"></p>
+        <button id="button8" onclick="shapy()">Press to check area of entered shapes</button><br><p id="p8"></p>
+        <script>
+          function number(){  var number1=prompt("Enter a number");
+            if(number1>0){
+                document.getElementById("p1").innerHTML="The number is positive";
+            }
+            else if(number1=0){
+                document.getElementById("p1").innerHTML="The number is 0"
+            }
+            else {
+                document.getElementById("p1").innerHTML="The number is negative";
+            }
+        }
+
+        function great() {
+            var num1=prompt("Enter the first number");
+            var num2=prompt("Enter the second number");
+            var num3=prompt("Enter the third number");
+
+        if(num1>num2 && num1>num3){
+            document.getElementById("p2").innerHTML=num1 + " is the biggest number";
+        } else if(num2>num1 && num2>num3){
+            document.getElementById("p2").innerHTML=num2 + " is the biggest number";
+        } else {
+            document.getElementById("p2").innerHTML=num3 + " is the biggest number";
+        }
+        }
+        function BMI() {
+            var weight=prompt("Enter your weight in Kilograms");
+            var height=prompt("Enter your height in centimeters(decimal points allowed)")/100;
+            var bmi=weight/(height*height);
+            if (bmi<18.5) {
+                document.getElementById("p3").innerHTML="Your BMI is "+bmi+" and you are underweight";
+            } else if (bmi>19 && bmi<25){
+                document.getElementById("p3").innerHTML="Your BMI is "+bmi+" and you are a healthy weight";
+
+            } else if (bmi>25 && bmi<30){
+                document.getElementById("p3").innerHTML="Your BMI is "+bmi+" and you are a overweight";
+
+            } else {
+                document.getElementById("p3").innerHTML="Your BMI is "+bmi+" and you are obese";
+
+            }
+
+        }
+        function grades() {
+            var grade=prompt("Enter your grade in percentage");
+            if (grade<45) {
+                document.getElementById("p4").innerHTML="You got an F"
+            } else if (grade>=45 && grade<50) {
+                document.getElementById("p4").innerHTML="You got a D"
+            }else if (grade>=50 && grade<60) {
+                document.getElementById("p4").innerHTML="You got a C"
+        } else if (grade>=60 && grade<80) {
+                document.getElementById("p4").innerHTML="You got a B"
+        } else if (grade>=80) {
+                document.getElementById("p4").innerHTML="You got a A"
+        }
+    }
+
+        function checksq() {
+            var width=prompt("What is the width");
+            var length=prompt("What is the lentgh");
+            if (length=width) {
+                document.getElementById("p5").innerHTML="It's a square"
+            } else {
+                document.getElementById("p5").innerHTML="Its a rectangle"
+            }
+        }
+
+        function triang() {
+            var L1=prompt("whats the first angle degree");
+            var L2=prompt("whats the second angle degree");
+            var L3=prompt("whats the third angle degree");
+            if (L1==L2 && L2==L3) {
+                document.getElementById("p6").innerHTML="Its a equilateral"
+            } else if (L1 === L2 || L2 === L3 || L3 === L1) {
+                document.getElementById("p6").innerHTML="Its a isosceles"
+            } else {
+                document.getElementById("p6").innerHTML="Its a scalene"
+            }
+        }
+
+        function oddeve() {
+            var numa=prompt("enter number");
+            if (numa % 2 == 1) {
+                document.getElementById("p7").innerHTML="Its odd"
+            } else {
+                document.getElementById("p7").innerHTML="Its even"
+            }
+        }
+
+        function shapy() {
+            var shaper=prompt("Choose your shape(square, rectangle, circle or triangle), be exact in spelling and capitalization");
+            if (shaper== "square") {
+                var Leng=prompt("Enter side length");
+                var area1=Leng*Leng;
+                var perime=Leng*4;
+                document.getElementById("p8").innerHTML="The Periemeter is "+perime+", The Area is "+area1
+            } else if (shaper== "rectangle") {
+                var Lengl=prompt("Enter length");
+                var wided=prompt("Enter Width");
+                var perime2=(wided*2)+(Lengl*2);
+                var area2=wided*Lengl;
+                document.getElementById("p8").innerHTML="The Periemeter is "+perime2+", The Area is "+area2
+            } else if (shaper== "circle") {
+                var radiu=prompt("Enter Radius");
+                var area3=3.14*(radiu*radiu);
+                var perime3=2*3.14*radiu;
+                document.getElementById("p8").innerHTML="The Periemeter is "+perime3+", The Area is "+area3
+            } else {
+                var base=prompt("Enter the base of the triangle");
+                var heightt=prompt("Enter the height of the triangle");
+                var ct=base+(heightt*2);
+                var areat=0.5*(base*heightt);
+                document.getElementById("p8").innerHTML="The Periemeter is "+ct+", The Area is "+areat
+
+            }
+        }
+        </script>
+    </body>
+</html>

@@ -1,0 +1,134 @@
+
+   body {background-image: url('https://images.unsplash.com/photo-1557682250-33bd709cbe85?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1000&q=80');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;}
+   /* The 3 Buttons CSS*/
+   .riobtn{
+    text-decoration:none;
+    background-color:#1995cc;
+    color:white;
+    padding:10px 30px;
+    border-bottom:4px solid #215198;
+    border-radius:2px;
+    transition: background-color 250ms ease-out;
+  }
+  
+  .riobtn:hover{ 
+    background-color:deepskyblue;
+  }
+  
+  .riobtn:active{
+    background-color:#215198;
+    border-width:2px;
+    position:relative;
+    top:2px;
+  }
+
+  .riobtn2{
+    text-decoration:none;
+    background-color:#eb2213;
+    color:white;
+    padding:10px 30px;
+    border-bottom:4px solid #7e0505;
+    border-radius:2px;
+    transition: background-color 250ms ease-out;
+  }
+  
+  .riobtn2:hover{ 
+    background-color:rgb(240, 101, 101);
+  }
+  
+  .riobtn2:active{
+    background-color:#7e0505;
+    border-width:2px;
+    position:relative;
+    top:2px;
+  }
+
+  .riobtn3{
+    text-decoration:none;
+    background-color:#35dd26;
+    color:white;
+    padding:10px 30px;
+    border-bottom:4px solid #106617;
+    border-radius:2px;
+    transition: background-color 250ms ease-out;
+  }
+  
+  .riobtn3:hover{ 
+    background-color:rgb(165, 255, 61);
+  }
+  
+  .riobtn3:active{
+    background-color:#106617;
+    border-width:2px;
+    position:relative;
+    top:2px;
+  }
+  .header {text-align: center; font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 26px; position: fixed; z-index: 2; left:900px;
+}
+iframe {text-align: center;}
+.heade1 {
+    left: 50%;
+    text-align: center;
+    font-family: monospace;
+    margin: 10px;
+    font-size: 30px;
+    width: 500px;
+    height: 250px;
+    color: lightblue;
+    text-shadow: 7px 1px 2px gray;
+}
+    .headerth {margin: 20px;}
+    .DRedBG {
+        color: white;
+        font-family:'Courier New', Courier, monospace;
+        font-weight: bold;
+        font-size: larger;
+    text-align: center;}
+        table {text-align: center;
+        width: 100%;}
+        .DRedBG h1 {
+        color: white;
+        font-family:'Courier New', Courier, monospace;
+        font-weight: bold;
+        text-shadow: 2px 2px 5px rgb(53, 27, 27);
+        font-size: x-large;}
+        .DRedBG h2 {
+        color: white;
+        font-family:'Courier New', Courier, monospace;
+        text-shadow: 2px 2px 5px rgb(53, 27, 27);
+        font-weight: bold;
+        font-size: larger;}
+        .DRedBG h3 {
+            color: white;
+            font-family:'Courier New', Courier, monospace;
+            text-shadow: 2px 2px 5px rgb(53, 27, 27);
+            font-weight: bold;
+            font-size: large;}
+        
+    li {
+        color: white;
+        font-family:'Courier New', Courier, monospace;
+        font-weight: bold;
+        font-size: larger;
+        text-align: left;
+    }
+    .saturate {filter: saturate(0%);}
+    .saturate:hover {filter: saturate(250%);}
+    .gray {filter: grayscale(0%);}
+    .gray:hover {filter: grayscale(100%);}
+    .blur {filter: blur(0px);}
+    .blur:hover {filter: blur(100px);}
+.review1 {
+    right: 0px;
+    font-size: x-large;
+
+}
+#review10 {
+    right: 0px;
+    font-size: x-large;
+    
+}

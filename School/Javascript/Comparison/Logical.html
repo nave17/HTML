@@ -1,0 +1,33 @@
+<html>
+    <head>
+<style>
+    #max {left: 350px; text-align: center; width: 600px; height: 550px; background-color: aliceblue; margin: 10px; display: block;}
+    #max1 {left: 350px; text-align: center; width: 600px; height: 550px; background-color: aliceblue; margin: 10px; display: block; text-shadow: 2px 4px 7px gray;}
+</style>
+    </head>
+    <body>
+        <script>
+            var a=5;
+            var b=10;
+            var c=7;
+
+            document.write((a==b)+ "<br>");
+            document.write((a!=b)+ "<br>");
+            document.write((a>b)+ "<br>");
+            document.write((a<b)+ "<br>");
+            document.write((a>=b)+ "<br>");
+            document.write((a<=b)+ "<br>");
+            document.write((a<b) && (b<c)+ "<br>");
+
+        </script>
+        <button type="button" onclick="document.getElementById('max').style.display='none', document.getElementById('max1').style.display=block">Click me</button>
+<div id="max">
+    <h2>This is now visible but it can disapear if u click the button above</h2>
+    <h3>Dont press it i dont want to change</h3>
+</div>
+<div id="max1">
+    <h2>Huh this isnt so bad</h2>
+    <h3>I actully like this Change</h3>
+</div>
+    </body>
+</html>
